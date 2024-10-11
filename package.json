@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "proxy": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+    "proxy": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
+    "generate-sb-types": "storyblok pull-components --space=303483 && storyblok-generate-ts source=./components.303483.json target=./component-types-sb"
   },
   "dependencies": {
     "next": "14.2.8",
@@ -23,6 +24,7 @@
     "eslint-config-next": "14.2.8",
     "local-ssl-proxy": "^2.0.5",
     "postcss": "^8",
+    "storyblok-generate-ts": "^2.1.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

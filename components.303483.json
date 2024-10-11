@@ -1,0 +1,312 @@
+{
+  "components": [
+    {
+      "name": "feature",
+      "display_name": null,
+      "created_at": "2024-10-10T15:40:19.446Z",
+      "updated_at": "2024-10-10T15:40:46.562Z",
+      "id": 6404926,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "required": true
+        },
+        "content": {
+          "type": "text",
+          "pos": 1,
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "feature",
+      "component_group_uuid": "1092a617-0c16-4e09-ac80-89d73b22a89c",
+      "color": "#2db47d",
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Nestable Blocks"
+    },
+    {
+      "name": "grid",
+      "display_name": null,
+      "created_at": "2024-10-10T15:39:06.695Z",
+      "updated_at": "2024-10-10T16:49:33.416Z",
+      "id": 6404924,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0
+        },
+        "items": {
+          "type": "bloks",
+          "pos": 1,
+          "required": true,
+          "minimum": 2,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "feature",
+            "testimonial"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "grid",
+      "component_group_uuid": "1092a617-0c16-4e09-ac80-89d73b22a89c",
+      "color": "#2db47d",
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Nestable Blocks"
+    },
+    {
+      "name": "hero",
+      "display_name": null,
+      "created_at": "2024-10-10T15:37:13.117Z",
+      "updated_at": "2024-10-10T15:38:18.364Z",
+      "id": 6404890,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "required": true
+        },
+        "content": {
+          "type": "text",
+          "pos": 1,
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "hero",
+      "component_group_uuid": "1092a617-0c16-4e09-ac80-89d73b22a89c",
+      "color": "#2db47d",
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Nestable Blocks"
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "created_at": "2024-09-03T14:04:28.911Z",
+      "updated_at": "2024-10-10T15:48:27.736Z",
+      "id": 6247018,
+      "schema": {
+        "blocks": {
+          "type": "bloks",
+          "pos": 0,
+          "restrict_type": "groups",
+          "restrict_components": true,
+          "component_whitelist": [],
+          "component_group_whitelist": [
+            "1092a617-0c16-4e09-ac80-89d73b22a89c"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "recommended_tours",
+      "display_name": null,
+      "created_at": "2024-10-10T15:43:16.999Z",
+      "updated_at": "2024-10-10T15:44:40.252Z",
+      "id": 6404929,
+      "schema": {
+        "headline": {
+          "type": "text",
+          "pos": 0,
+          "required": true
+        },
+        "tours": {
+          "type": "options",
+          "pos": 1,
+          "required": true,
+          "source": "internal_stories",
+          "filter_content_type": [
+            "tour"
+          ],
+          "min_options": "2",
+          "max_options": "2"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "recommended_tours",
+      "component_group_uuid": "1092a617-0c16-4e09-ac80-89d73b22a89c",
+      "color": "#2db47d",
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Nestable Blocks"
+    },
+    {
+      "name": "testimonial",
+      "display_name": null,
+      "created_at": "2024-10-10T15:41:20.601Z",
+      "updated_at": "2024-10-10T16:49:33.341Z",
+      "id": 6404928,
+      "schema": {
+        "name": {
+          "type": "text",
+          "pos": 0,
+          "required": true
+        },
+        "comment": {
+          "type": "text",
+          "pos": 1,
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "testimonial",
+      "component_group_uuid": "1092a617-0c16-4e09-ac80-89d73b22a89c",
+      "color": "#2db47d",
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Nestable Blocks"
+    },
+    {
+      "name": "tour",
+      "display_name": null,
+      "created_at": "2024-09-05T10:50:28.491Z",
+      "updated_at": "2024-09-05T15:41:57.186Z",
+      "id": 6257165,
+      "schema": {
+        "name": {
+          "type": "text",
+          "pos": 0,
+          "required": true
+        },
+        "introduction": {
+          "type": "text",
+          "pos": 1,
+          "required": true
+        },
+        "price": {
+          "type": "number",
+          "pos": 2,
+          "required": true,
+          "min_value": 0
+        },
+        "main_image": {
+          "type": "asset",
+          "pos": 3,
+          "required": true,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "location": {
+          "type": "option",
+          "pos": 4,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "ab0e8d08-f13d-4aac-a710-00c77182d6f9",
+              "name": "Taipei",
+              "value": "Taipei"
+            },
+            {
+              "_uid": "5a1e14d3-1705-4e83-a122-10a6c0372125",
+              "value": "Jiufen",
+              "name": "Jiufen"
+            },
+            {
+              "_uid": "fc775382-d90a-4162-a784-ec716b82eda4",
+              "value": "Kaoshiung",
+              "name": "Kaoshiung"
+            }
+          ]
+        },
+        "body": {
+          "type": "richtext",
+          "pos": 5,
+          "required": true,
+          "customize_toolbar": true,
+          "toolbar": [
+            "bold",
+            "list",
+            "h2",
+            "h3",
+            "image",
+            "italic"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "tour",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    }
+  ],
+  "component_groups": [
+    {
+      "name": "Nestable Blocks",
+      "id": 417823,
+      "uuid": "1092a617-0c16-4e09-ac80-89d73b22a89c",
+      "parent_id": null,
+      "parent_uuid": null
+    }
+  ]
+}
