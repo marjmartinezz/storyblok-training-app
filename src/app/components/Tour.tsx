@@ -5,8 +5,9 @@ import {
   RichTextSchema,
 } from "@storyblok/react/rsc";
 import Image from "next/image";
+import { TourStoryblok } from "../../../component-types-sb";
 
-export const Tour = (props: any) => {
+export const Tour = (props: TourStoryblok) => {
   return (
     <main
       {...storyblokEditable(props.blok)}
