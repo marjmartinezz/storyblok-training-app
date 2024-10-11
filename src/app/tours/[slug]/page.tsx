@@ -23,10 +23,8 @@ const fetchTourPage = async (slug: string) => {
   return response.data.story;
 };
 
-const TourPage = async (props: any) => {
+export default async function TourPage( props: { params: { slug: string; }; }) {
   const story = await fetchTourPage(props.params.slug);
   return <StoryblokStory story={story} />;
 };
-
-export default TourPage;
  
