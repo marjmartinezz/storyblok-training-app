@@ -7,7 +7,7 @@ export const RecommendedTour = (props: TourStoryblok) => {
     <div className="bg-white rounded-sm shadow">
       <Image
         className="aspect-video object-cover w-full"
-        src={`${props.story.content.main_image.filename}/m/736x414/filters:quality(70)`}
+        src={`${props.story.content.main_image.filename}`}
         width={736}
         height={414}
         alt={props.story.content.main_image.alt}
