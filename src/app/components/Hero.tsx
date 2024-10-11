@@ -1,6 +1,7 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
+import { HeroStoryblok } from "../../../component-types-sb";
 
-export const Hero = (params: any) => {
+export const Hero = (params: HeroStoryblok) => {
   return (
     <section
       {...storyblokEditable(params.blok)}

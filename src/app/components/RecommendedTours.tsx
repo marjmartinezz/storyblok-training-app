@@ -1,7 +1,11 @@
-import { RecommendedTour } from "./RecommendedTour";
-import { storyblokEditable } from "@storyblok/react/rsc";
+import {
+  RecommendedToursStoryblok,
+  TourStoryblok,
+} from '../../../component-types-sb';
+import { RecommendedTour } from './RecommendedTour';
+import { storyblokEditable } from '@storyblok/react/rsc';
 
-export const RecommendedTours = (params: any) => {
+export const RecommendedTours = (params: RecommendedToursStoryblok) => {
   return (
     <section
       {...storyblokEditable(params.blok)}
@@ -11,8 +15,12 @@ export const RecommendedTours = (params: any) => {
         {params.blok.headline}
       </h2>
       <div className="grid md:grid-cols-2 gap-8 mt-16">
-        {params.blok.tours.map((tour: any) => (
-          <RecommendedTour story={tour} key={tour.content._uid} />
+        {params.blok.tours.map((tour: TourStoryblok) => (
+          <RecommendedTour
+            {...tour}
+            story={tour}
+            key={tour.content._uid}
+          />
         ))}
       </div>
     </section>

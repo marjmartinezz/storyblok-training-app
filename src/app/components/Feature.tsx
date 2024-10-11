@@ -1,6 +1,7 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
+import { FeatureStoryblok } from "../../../component-types-sb";
 
-export const Feature = (params: any) => {
+export const Feature = (params: FeatureStoryblok) => {
   return (
     <div
       {...storyblokEditable(params.blok)}

@@ -1,6 +1,7 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
+import { TestimonialStoryblok } from "../../../component-types-sb";
 
-export const Testimonial = (params: any) => {
+export const Testimonial = (params: TestimonialStoryblok) => {
   return (
     <div
       {...storyblokEditable(params.blok)}
